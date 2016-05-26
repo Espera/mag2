@@ -2,7 +2,7 @@
 
 if (empty($_SESSION['id']) || $_SESSION['id']==''){
 	
-echo 'Registreties	
+echo '<div style="border-radius: 0.5em;margin: 2em auto;border: 1px solid #666;padding: 2em;">Registreties ka jaunam klientam	
 	<div id="errors"></div>
 	<div style="display:table">
 		<div style="display:table-row"><div style="display:table-cell">Jusu vards</div><div style="display:table-cell"> <input type="text" placeholder="Vards" id="name"/></div></div>
@@ -11,14 +11,18 @@ echo 'Registreties
 		<div style="display:table-row"><div style="display:table-cell">Epasts</div><div style="display:table-cell"> <input type="text" placeholder="Email" id="email"/></div></div>
 	</div>
 	
-	<div class="button" onclick="user_register()">Registreties</div>';
+	<div class="button" onclick="user_register()">Registreties</div>
+	
+</div>';
 
-echo 'Ienakt
+echo '<div style="border-radius: 0.5em;margin: 2em auto;border: 1px solid #666;padding: 2em;">Ienakt sistema
 	<div style="display:table">
 		<div style="display:table-row"><div style="display:table-cell">Epasts</div><div style="display:table-cell"> <input type="text" placeholder="Email" id="email2"/></div></div>
 	</div>
 	
-	<div class="button" onclick="user_login()">Ienakt</div>';
+	<div class="button" onclick="user_login()">Ienakt</div>
+	
+	</div>';
 
 
 
