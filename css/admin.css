@@ -1,0 +1,290 @@
+@charset "utf-8";
+/* CSS Document */
+.admin .category {
+display:inline-block;
+background:#09F;
+color:#fff;
+border-radius:0.5em;
+padding:0.5em;
+margin:1em;
+cursor:pointer;	
+border:1px solid #06F;
+box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.admin .category.active{border:1px solid #003;background:#03F;}
+.admin .category.active:hover{background:#06F;}
+.admin .category:hover{background:#06F;}
+
+.ability {display:none;}
+.ability.active{display:block;}
+
+.table_field{
+	width:100%;
+overflow-x:scroll;
+display:none;}
+.table_field.active{display:block;}
+
+.action {
+display:inline-block;
+background:#F9F944;
+color:#fff;
+border-radius:0.5em;
+padding:0.5em;
+margin:1em;
+cursor:pointer;	
+color:#555;
+border:1px solid #CBCB03;
+box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.action.active{border:1px solid #A8AD00;color:#000;background:#F5F500;}
+.action.active:hover{background:#D5D500;}
+.action:hover{background:#E9E934;color:#222;	}
+
+.field{
+width:100%;
+position:relative;
+left:0;
+margin:0 auto;
+background:#CCC;
+padding: 2em 1em;
+border-radius:1em;	
+display:none;
+}
+.field.active{display:block;}
+
+
+
+.admin table {}
+.admin table tr.blue {background:#BEBEFF;font-weight:bolder;}
+.admin table tr.green {background:#dfd;}
+.admin table tr.white {background:#fff;}
+
+.admin table tr .email .reply:hover{
+font-weight:bold;
+color:#00F;
+cursor:pointer;
+}
+.admin table tr .delete:hover{
+color:red;
+cursor:pointer;
+}
+
+.admin table tr.selected {background:rgba(0,0,255,0.3)}
+
+.admin table td {padding:0 0.3em;}
+.admin table td .button{
+display:inline-block;
+background:#3d1;
+color:#fff;
+border-radius:0.5em;
+padding:0.5em;
+margin:1em;
+cursor:pointer;	
+border:1px solid #2c0;
+box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.admin table td .button.add{
+background:#3d1;
+border:1px solid #2c0;
+}
+.admin table td .button.add:hover{background:#1b0;}
+
+.admin table td .button.put{
+background:#B100E2;
+border:1px solid #61007C;
+}
+.admin table td .button.put:hover{background:#D400E2;}
+
+
+.admin .div_picture{
+min-width:310px;	
+}
+
+.admin .form_picture{
+width: 100%;
+max-width: 60px;
+overflow: hidden;
+display: inline-flex;
+text-align:center;
+border:1px solid #000;
+}
+.admin form.picture{
+width:100%;	
+overflow:hidden;
+
+text-align:center;
+}
+.admin form.picture input{
+width:50px;	
+overflow:hidden;
+}
+
+
+.admin table .preview{
+text-align:center;	
+}
+.admin table .preview .preview_url{
+display:none;	
+}
+.admin table .preview .preview_delete{
+position: relative;
+float: left;
+display:none;
+}
+.admin table .preview .preview_delete.show{
+display:block;	
+cursor:pointer;
+}
+.admin table .preview .preview_delete.show:hover{
+color:red;
+}
+.admin table .preview img{
+width:50px;
+height:50px;
+position: relative;
+float: left;	
+}
+
+#errors{
+display:none;
+background: red;
+top: 20%;
+left: 40%;
+font-size: xx-large;
+padding: 5%;
+}
+#errors.active{
+display:block;
+position: fixed;	
+}
+
+.admin_table{
+	
+}
+.admin_table .search{
+display: block;
+width: 100%;
+margin: 0;	
+}
+.admin_table .search .button{
+
+background:#3d1;
+display:inline-block;
+width:auto;
+clear:both;
+padding:0.3em;
+background:#3d1;
+color:#fff;
+border:1px solid #2c0;
+box-shadow: 0 0 10px rgba(0,0,0,0.5);
+border-radius:0.3em;	
+text-align:center;
+text-transform: uppercase;
+font-size:x-small;
+cursor:pointer;	
+-webkit-transition: background-color 0.1s linear;
+-moz-transition: background-color 0.1s linear;
+-o-transition: background-color 0.1s linear;
+
+}
+.admin_table .search .button:hover{
+background:#3f1;
+-webkit-transition: background-color 0.1s linear;
+-moz-transition: background-color 0.1s linear;
+-o-transition: background-color 0.1s linear
+}
+
+.load_bar{
+width: 200px;
+height: 220px;
+background: url(pic/load.gif) 0 0 no-repeat;
+margin: 0 auto;
+overflow:hidden;
+}
+.table_search_by{
+clear:both;	
+}
+.table_search_by .id {
+display:inline;
+width:auto;
+background:#EB56EF;
+color:#fff;
+border:1px solid #2c0;
+
+text-align:center;
+}
+
+.main .menu {
+width: 610px;
+height:auto;
+margin: 0 auto;
+}
+
+
+.main .menu div{
+display:inline-block;
+width: 200px;
+height: 200px;
+border:1px solid transparent;
+}
+.main .menu div:hover{
+border:1px solid #00F;
+}
+.main .menu .order{background: url(pic/admin_order.png) 0 0 no-repeat;}
+.main .menu .email{background: url(pic/admin_email.png) 0 0 no-repeat;}
+.main .menu .db{background: url(pic/admin_db.png) 0 0 no-repeat;}
+.main .menu .calendar{background: url(pic/admin_calendar.png) 0 0 no-repeat;}
+.main .menu .contact{background: url(pic/admin_contacts.png) 0 0 no-repeat;}
+.main .menu .note{background: url(pic/admin_note.png) 0 0 no-repeat;}
+.main .menu .remind{background: url(pic/admin_remind.png) 0 0 no-repeat;}
+  
+.back_menu{font-size:x-large;}
+
+.table_field .cell{display:table-cell;padding:1px 2px;border:1px solid #ccc;}
+
+.modal .content .email{
+width: 80%;
+margin: 0 auto;
+background: #fff;
+padding: 5%;	
+}
+.modal .content .email .delete:hover{
+color:red;
+cursor:pointer;
+}
+.modal .content .email .up, .modal .content .email .down{
+border:1px solid #333;
+border-radius:0.5em;
+padding:0.5em 1em;
+margin:0.5em auto;
+}
+
+.modal .content .email .up .btn{
+display: inline-block;
+background: #09F;
+color: #fff;
+border-radius: 0.5em;
+padding: 0.5em;
+cursor: pointer;
+border: 1px solid #06F;
+box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.modal .content .email .up .btn:hover{
+border: 1px solid #003;
+background: #03F;
+}
+.modal .content .email .up .to, .modal .content .email .up .subject, .modal .content .email .up .lang{
+display: inline-block;
+margin-left:1em;
+}
+.modal .content .email .up .id{display:none;}
+.modal .content .email .down textarea{
+width: 80%;
+margin: 0.5em auto;
+height: 10em;
+}
+
+
+
+
