@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<products>
+	<product>
+		<id>1</id>
+		<ean>11111</ean>
+		<name></name>
+		<price>9</price>
+		<count>10</count>
+		<info></info>
+	</product>
+
+	<product>
+		<id>2</id>
+		<ean>22222</ean>
+		<name></name>
+		<price>16</price>
+		<count>100</count>
+		<info></info>
+	</product>
+
+	<product>
+		<id>3</id>
+		<ean>33333</ean>
+		<name>Nosaukums</name>
+		<price>23</price>
+		<count>56</count>
+		<info>Informacija</info>
+	</product>
+
+	<product>
+		<id>4</id>
+		<ean>44444</ean>
+		<name>Products</name>
+		<price>35</price>
+		<count>10</count>
+		<info>Info</info>
+	</product>
+
+	<product>
+		<id>5</id>
+		<ean>55555</ean>
+		<name>Product</name>
+		<price>49</price>
+		<count>10</count>
+		<info>Informacija par produktu</info>
+	</product>
+</products>	

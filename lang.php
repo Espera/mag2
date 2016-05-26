@@ -1,0 +1,1 @@
+﻿<? session_start(); $_SESSION['vets']['lang']=$_POST['data']; ?>
