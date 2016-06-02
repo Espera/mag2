@@ -57,29 +57,29 @@ email = $('#email').val();
 	$.ajax({
 	type: "post", url: "user_register.php", data: {name:name, surname:surname, email:email,phone:phone},
 	success: function(msg){
-		$('#errors').empty().append(msg);
+		alert('Lietotajs veiksmigi registrets');
+		location.reload();
 	}
 	});	
 }
 
 function offer_suppliers(id){
-$('#errors_'+id).empty().append('Piprasijums izsutits');
+$('#errors_'+id).empty().append('Pieprasijums izsutits');
 	$.ajax({type: "post", url: "offer.php", data: {id:id,status:'admin'},});
 }
 
 $( document ).on('click','.supplier .button ', function(){
-alert('a');
 id = $(this).data('id');
 count = $(this).data('count');
 user = $(this).data('user');
 price = $('#offer_'+id).val();
 offer_user = $(this).data('offeruser');
-alert(offer_user);
 
 	$.ajax({
 	type: "post", url: "offer_admin.php", data: {id:id, count:count, user:user,price:price, offer_user:offer_user},
 	success: function(msg){
-		$('#errors').empty().append(msg);
+		alert('Piedavajums tika izsutits');
+		location.reload();
 	}
 	});
 });
