@@ -62,7 +62,6 @@ global $_LANG;
 				$summ_one=$price2*$counts;}
 			else{$summ_one=$price*$counts;}
 
-				
 		$summ = $summ+$summ_one;
 	}
 	$summ = number_format($summ, 2, '.', '');
@@ -111,7 +110,7 @@ global $_LANG;
 $user = $_SESSION['id'];
 include 'db.php';
 		
-	$query = "SELECT * FROM `offer` WHERE `product_id`='$id' AND `user`='$user' AND `status`='1' AND `receive`='admin'";		
+	$query = "SELECT * FROM `offer` WHERE `product_id`='$id' AND `user_id`='$user' AND `status`='1' Order by `id` DESC LIMIT 1";		
 	if ($result = $mysqli->query($query, MYSQLI_USE_RESULT) ) {
 	while ($row = $result->fetch_object()){
 		$admin_price = $row->price;	
@@ -224,15 +223,11 @@ global $_LANG;
 						
 
 						echo '<div class="price">';
-							echo 'Cena:';
-							
-							echo 'price1: '.$price;
-							echo ' price2: '.$price2;
-							if ($price2>0){
-								echo '<div class="old">'.$price.' EUR</div>';	
-								echo '<div class="new">'.$price2.' EUR</div>';								
+								if ($price2>0){
+								echo '<div class="old">Standarta cena: '.$price.' EUR</div>';	
+								echo '<div class="new">Veikala piedavajums: '.$price2.' EUR</div>';								
 							}else {
-								echo '<div class="one">'.$price.' EUR</div>';	
+								echo '<div class="one">Cena:'.$price.' EUR</div>';	
 							}
 							if ($product_status>0){echo '<div class="offer_status">Jusu cenas piedavajums tiek apstradats</div>';}
 						echo '</div>';
