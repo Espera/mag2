@@ -179,7 +179,7 @@ function shop_id($_LANG, $id){
 						echo '<div class="big">';
 						$file_count= (count($file_list_pb)>0)?(count($file_list_pb)-1):0;
 						$i=0;	
-							if ($file_count>0){
+							if ($file_count>=0){
 								while ($file_count>=0){
 									echo '<div class="picture';
 										if ($i==0){echo ' show';}
@@ -430,12 +430,12 @@ function shop_products($_LANG, $uri, $animal, $category, $page, $filter, $filter
 					echo '<a class="ajax" href="'._LINK_PATH.'shop/'.$id.'">';		
 						echo'<div class="pictures_list" id="pictures_list_'.$id.'" data-id="'.$id.'">';
 							$dir = 'img/shop/'.$id.'/';
-							$file_list_pb = glob("$dir/?pb*.jpg");
+							$file_list_pb = glob("$dir/?ps*.jpg");
 			
 							$file_count= (count($file_list_pb)>0)?(count($file_list_pb)-1):0;
 							
 							$i=0;	
-								if ($file_count>0){
+								if ($file_count>=0){
 									
 									echo'<div class="shop_no_image">';
 										if (!empty($file_list_pb[1])){
